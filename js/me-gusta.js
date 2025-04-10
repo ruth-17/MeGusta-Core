@@ -1,26 +1,31 @@
-let contador = 1;
+
 
 /*contador primer boton*/
+let contador1 = 0;
 let contarLikes1 = document.querySelector('.btn1');
 let likes1 = document.querySelector("#like1");
-contarLikes1.addEventListener("click",function(){
-    let sumaLikes = Number(likes1.textContent);
-    likes1.textContent = sumaLikes + contador;
-});
+
+function likeOne(){
+        contador1 ++;
+        likes1.textContent = contador1;
+}
 
 /*contador segundo boton*/
+let contador2 = 0;
 let contarLikes2 = document.querySelector('.btn2');
 let likes2 = document.querySelector("#like2");
-contarLikes2.addEventListener("click",function(){
-    let sumaLikes = Number(likes2.textContent);
-    likes2.textContent = sumaLikes + contador;
-});
+
+function likeTwo(){
+    contador2 ++;
+    likes2.textContent = contador2;
+}
 
 /*contador tercer boton*/
+let contador3 = 0;
 let contarLikes3 = document.querySelector('.btn3');
 let likes3 = document.querySelector("#like3");
-contarLikes3.addEventListener("click",function(){
-    let sumaLikes = Number(likes3.textContent);
-    likes3.textContent = sumaLikes + contador;
-});
 
+function likeThree(){
+    contador3 ++;
+    likes3.textContent = contador3;
+}
